@@ -29,7 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r ./publisher/requirements.txt
 
-    - name: Publish MD files to the Confluence space
+    - name: Publish MD files to the Confluence space.
       env:
         LOGIN: ${{secrets.confluence_login }}
         PASSWORD: ${{secrets.confluence_password }}
